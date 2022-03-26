@@ -1,0 +1,152 @@
+@import "fonts";
+@import "libs";
+@import "varibles";
+
+
+// Стандартные настройки
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+.body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+   }
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: $grey;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    padding-inline-start: 0;
+}
+//Стили заголовков
+.article-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: $black;
+}
+.article-subtitle{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $black;
+}
+.article-text {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $grey;
+}
+
+//Контентная часть
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    font-family: "Gilroy-Bold";
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+.active-link {
+    color: $black;
+}
+
+.main-header__line {
+    border-bottom: 1px solid $grey;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.main-promo {
+    display: flex;
+    justify-content: space-between;
+    min-height: 135px;
+    align-items: flex-end;
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 54px;
+}
+.main-promo__logo h1{
+    font-size: 47.3392px;
+    line-height: 59px;
+}
+.main-promo__info h1{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+}
+.main-promo__lang h1{
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey;
+}
+.header-img {
+    min-height: 387px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 104px;
+}
+
+.AboutMe {
+    background-color: $light_bg;
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutMe-title{
+    margin-top: 120px;
+    margin-bottom: 35px;
+}
+.AboutMe-subtitle{
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 115px;
+}
+
+.Skills-title{
+    margin-top: 90px;
+    margin-bottom: 85px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Skills-block{
+    display: flex;
+    justify-content: space-between;
+    min-height: 207px;
+    margin-bottom: 110px;
+}
+.Skills-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.Skills-img {
+    margin-bottom: -20px;
+}
